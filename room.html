@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/room.css">
+  <link rel="stylesheet" href="styles/global.css">
+
+  <!-- fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Rocket.Q - Perguntas e Respostas</title>
+</head>
+<body>
+  <div id="room" class="content">
+    <header>
+      <a href="#">
+        <img src="assests/Logo.svg" alt="Rocket.Q - Logo">
+      </a>
+
+      <div class="buttons">
+        <div class="button outlined">
+          #323243
+          <img src="assests/copy.svg" alt="Copiar número da sala">
+        </div>  
+        <a href="#" class="button">
+          <img src="assests/users-white.svg" alt="Criar uma sala">
+          Criar sala
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="question-form">
+        <h2>Faça sua pergunta</h2>
+        <form action="">
+          <label for-id="question" class="sr-only">O que você quer perguntar?</label>
+            <textarea name="question" placeholder="O que você	quer perguntar?" id="question"></textarea>
+            <footer>
+              <div>
+                <img src="assests/lock.svg" alt="Cadeado">
+                Esta pergunta é anônima
+              </div>
+              <button>Enviar</button>
+            </footer>
+        </form>
+      </section>
+
+      <section id="questions">
+        <h2 class="sr-only">Perguntas da Comunidade</h2>
+        <div class="questions">
+
+          <div class="questions-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="assests/user.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <!-- <p>Qual a diferença entre const, var e let no JavaScript?</p> -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro minima natus vero necessitatibus fugit repellendus quis ullam accusantium ex dolor eaque laborum modi illo temporibus, perferendis error officia dolorum molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nemo iusto assumenda aperiam cumque adipisci autem nisi saepe temporibus eos! Possimus quisquam obcaecati similique autem, ullam vel veritatis voluptatem voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestiae neque culpa reiciendis quibusdam beatae nemo et similique nostrum, dolores harum? Similique quo qui voluptatem, eligendi sit illo officiis placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ex corrupti quaerat veniam unde necessitatibus quis cupiditate quos. Excepturi eaque sapiente dicta, maxime sint quam expedita iure quis vero esse!</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="check"><img src="assests/check 1.svg" alt="Marcar como lida">Marcar como lida</a>
+              <a href="#" class="delete"><img src="assests/trash 1.svg" alt="Excluir">Excluir</a>
+            </div>
+          </div>
+
+          <div class="questions-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="assests/user.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é TapyScript?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="check"><img src="assests/check 1.svg" alt="Marcar como lida">Marcar como lida</a>
+              <a href="#" class="delete"><img src="assests/trash 1.svg" alt="Excluir">Excluir</a>
+            </div>
+          </div>
+
+          <div class="questions-wrapper read">
+            <div class="question-content">
+              <div class="user">
+                <img src="assests/user.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é Script?</p>
+              </div>
+            </div>
+            <div class="actions"><!-- Acrescentei o sr-only para apagar o botão de excluir, no JS devo fazer isso, mas preciso descobrir como trocar texto com ele, lembrar da transição -->
+              <a href="#" class="check "><img src="assests/check 1.svg" alt="Marcar como lida">Marcar como lida</a>
+              <a href="#" class="delete sr-only"><img src="assests/trash 1.svg" alt="Excluir">Excluir</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
